@@ -478,11 +478,13 @@ public class UtilController
             dbconn.insertIntoPendingJobs(printer, fName, lName, Class, section, fileName, fileLoc, email);
             
             java.util.concurrent.TimeUnit.SECONDS.sleep(2);
+            
+            JOptionPane.showMessageDialog(new java.awt.Frame(), "Successfully submitted file!");
         }
         
         catch (IOException e) 
         {
-            javax.swing.JOptionPane.showMessageDialog(new java.awt.Frame(), "IOException! File couldn't be navigated.");
+            JOptionPane.showMessageDialog(new java.awt.Frame(), "IOException! File couldn't be navigated.");
         } 
         
         catch (InterruptedException ex)

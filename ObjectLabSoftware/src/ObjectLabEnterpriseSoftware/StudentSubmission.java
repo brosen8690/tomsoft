@@ -356,10 +356,8 @@ public class StudentSubmission extends javax.swing.JFrame {
                 
                   //***********Calls UtilController Method to move file to the Submit location
                 UtilController.moveFileToSubmitLocation(fileLocation, inst, printer, fName, lName, splittedCourse[0], splittedCourse[1], fileName, email);
-               
-                //***********GUI For CONFIRMATION (Proper place needed)  ****************
-                  JOptionPane.showMessageDialog(new java.awt.Frame(), "Successfully submitted file!");
-                  dispose();
+
+                 //dispose();
                  //***********resets fields//***********
                 Reset_StudentSubmissionFields();
                 
@@ -372,7 +370,6 @@ public class StudentSubmission extends javax.swing.JFrame {
 		  {
               
                 //*********** resets fields  //***********
-                //dispose();
                 setVisible(false);
                 fileLocation.setText(null);
                 projName.setText(null);
