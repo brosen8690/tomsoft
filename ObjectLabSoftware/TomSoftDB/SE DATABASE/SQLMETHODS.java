@@ -416,13 +416,14 @@ public class SQLMethods
 		}
 	}
 
-	public void insertIntoCustom(String printer, String name)
+	public void insertIntoCustom(String printer, String name, boolean num)
 	{
 		try
 		{
-			stmt = conn.prepareStatement("insert into custom_printer_column_names ( printer_name, custom_field_name) values (?,?);");
+			stmt = conn.prepareStatement("insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (?,? ,?);");
 			stmt.setString(1, printer);
 			stmt.setString(2, name);
+			stmt.setBoolean(3, num);
 			stmt.executeUpdate();
 		} catch (Exception e)
 		{

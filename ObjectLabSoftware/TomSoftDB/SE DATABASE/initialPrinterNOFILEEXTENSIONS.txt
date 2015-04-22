@@ -1,0 +1,14 @@
+﻿INSERT INTO printer (printer_name,current, total_run_time) values (‘zcorp’, 'current', 0);
+INSERT INTO printer (printer_name,current, total_run_time) values (‘objet, 'current', 0);
+INSERT INTO printer (printer_name,current, total_run_time) values (‘solidscape’, 'current', 0);
+INSERT INTO printer (printer_name,current, total_run_time) values (‘lazercutter’, 'current', 0);
+insert into custom_printer_column_names ( printer_name, custom_field_name, numerical) values (‘zcorp’,’yellowBinder’, TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name, numerical) values (‘zcorp’,’magentaBinder’,TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name, numerical) values (‘zcorp’,’cyanBinder’ ,TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name, numerical) values (‘zcorp’,’cubicInches’, TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘solidscape’,’resolution’, TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘objet’,’buildConsumed’, TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘objet’,’supportConsumed’, TRUE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘objet’,’buildMaterials’, FALSE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘lazercutter’,’userid’, FALSE);
+insert into custom_printer_column_names ( printer_name, custom_field_name ,numerical) values (‘lazercutter’,’material’, TRUE);
